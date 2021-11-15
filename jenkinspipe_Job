@@ -14,7 +14,7 @@ stages{
     }
     stage{
         steps('Message'){
-            echo 'This is just a sample add'
+            echo 'This is just a sample build trigger JOB'
         }
     }
     stage("build trigger"){
