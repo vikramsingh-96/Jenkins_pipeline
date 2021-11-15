@@ -18,7 +18,7 @@ stages{
         }
     }
     stage("build trigger"){
-        echo'just a trigger buildingggggggg123123'
+        echo'just a trigger building'
     }
 
     stage('Build'){
@@ -27,7 +27,5 @@ stages{
         }
 
     }
-
-
 }
 }
