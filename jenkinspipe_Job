@@ -12,6 +12,12 @@ stages{
             git branch: 'master', url: 'https://github.com/vikramsingh-96/maven-project.git'
         }
     }
+    stage{
+        steps{
+            echo 'This is just a sample add'
+        }
+    }
+
     stage('Build'){
         steps{
             sh 'mvn -B package'
