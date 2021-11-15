@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-<<<<<<< HEAD
+
 
   <groupId>com.example.maven-samples</groupId>
   <artifactId>parent</artifactId>
@@ -12,7 +12,7 @@
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
 
  
-=======
+
   <groupId>com.example.maven-project</groupId>
   <artifactId>maven-project</artifactId>
   <packaging>pom</packaging>
@@ -274,7 +274,6 @@
   </prerequisites>
 
 </project>
-<<<<<<< HEAD
-=======
 
->>>>>>> 883e1e5 (First commit from VS Code)
+
+
