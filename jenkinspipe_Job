@@ -11,7 +11,6 @@ pipeline {
                     url: 'https://github.com/vikramsingh-96/maven-project.git'
                   }
         }
-<<<<<<< HEAD
         stage('just trying'){
              steps('Message')
              {
@@ -25,22 +24,9 @@ pipeline {
             }
         stage('Build'){
             steps{
-=======
-    }
-    stage("build trigger"){
-        echo'just a trigger building6485668'
-    }
-
-    stage('Build'){
-        steps{
->>>>>>> ccff7ca5918d88f1298c35c6bc97e85750dec324
             sh 'mvn -B package'
                 }
 
         }
     }
-<<<<<<< HEAD
-=======
-}
->>>>>>> ccff7ca5918d88f1298c35c6bc97e85750dec324
 }
