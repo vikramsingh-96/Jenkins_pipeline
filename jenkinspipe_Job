@@ -1,33 +1,32 @@
 pipeline {
-agent any
-
-tools{
-    maven '3.5.2'
-    java '1.8.0'
-}
-
-stages{
-    stage('Initialize') {  
-        steps{
-            git branch: 'master', url: 'https://github.com/vikramsingh-96/maven-project.git'
+    agent any
+    tools{
+    maven 'Maven_Home'
+    jdk 'Home_JAVA'
+    }
+    stages{
+        stage('Initialize') {  
+             steps{
+                git branch: 'master'
+                    url: 'https://github.com/vikramsingh-96/maven-project.git'
+                  }
         }
-    }
-    stage{
-        steps('Message'){
-            echo 'This is just a sample build trigger JOB'
-        }
-    }
-    stage("build trigger"){
-        echo'just a trigger buildingggggggg'
-    }
-
-    stage('Build'){
-        steps{
+        stage('just trying'){
+             steps('Message')
+             {
+                echo 'This is just a sample build trigger JOB'
+             }
+            }
+        stage("build trigger") {
+            steps{
+                echo'just a trigger buildingggggggg'
+            }
+            }
+        stage('Build'){
+            steps{
             sh 'mvn -B package'
+                }
+
         }
-
     }
-
-
-}
 }
