@@ -16,11 +16,6 @@ pipeline {
                 echo 'This is just a sample build trigger JOB'
              }
             }
-        stage("build trigger") {
-            steps{
-                echo'just a trigger buildingggggggg'
-            }
-            }
         stage('Build'){
             steps{
             sh 'mvn -B package'
