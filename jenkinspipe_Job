@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('Initialize') {  
              steps{
-                git branch: 'master' url: 'https://github.com/vikramsingh-96/maven-project.git'
+                git branch: 'master', url: 'https://github.com/vikramsingh-96/maven-project.git'
                   }
         }
         stage('just trying'){
