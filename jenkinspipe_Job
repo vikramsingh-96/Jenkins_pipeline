@@ -11,7 +11,7 @@ pipeline {
                   }
         }
         stage('just trying'){
-             steps('Message')
+             steps('Acnknowlegment')
              {
                 echo 'This is just a sample build trigger JOB'
              }
