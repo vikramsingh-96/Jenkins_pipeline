@@ -10,7 +10,7 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/vikramsingh-96/maven-project.git'
                   }
         }
-        stage('Building project'){
+        stage('Building'){
              steps('Acnknowlegment')
              {
                 sh 'mvn clean install'
