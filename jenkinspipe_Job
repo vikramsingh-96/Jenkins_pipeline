@@ -10,9 +10,10 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/vikramsingh-96/maven-project.git'
                   }
         }
-        stage('just learning'){
+        stage('Building project'){
              steps('Acnknowlegment')
              {
+                sh 'mvn clean install'
                 echo 'This is just a sample build trigger JOB'
              }
          }
