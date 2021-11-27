@@ -15,16 +15,12 @@ pipeline {
              {
                 echo 'This is just a sample build trigger JOB'
              }
-            }
-        stage('Build'){
-            steps{
-            sh 'mvn -B package'
-                }
-        }
-        stage('Deploy'){
+         }
+        
+        stage('Deploying'){
             steps{
                 sshagent(['Deply_tomcat']) {
-                    sh scp -o StrictHostKeyChecking=no /webapp/target/webapp.war  ec2-user@18.222.183.9:/opt/tommy/apache-tomcat-10.0.12/webapps
+                    sh scp -o StrictHostKeyChecking=no /webapp/target/webapp.war ec2-user@18.22.183.9:/opt/tommy/apache-tomcat-10.0.12/webapps
                     }  
         }
     }
